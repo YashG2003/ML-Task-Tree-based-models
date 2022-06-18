@@ -20,6 +20,7 @@ Types of decision tree is based on the type of target variable we have. It can b
 
 2)Continuous Variable Decision Tree: Decision Tree has continuous target variable then it is called as Continuous Variable Decision Tree.
 
+
 Important Terminology related to Tree based Algorithms
 
 Root Node: It represents entire population or sample and this further gets divided into two or more homogeneous sets.
