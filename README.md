@@ -182,6 +182,42 @@ Not fit for continuous variables: While working with continuous numerical variab
 
 Overfitting can be prevented in following 2 ways:
 
+a) Setting constraints on Tree size
+b) Tree Pruning
+
+SETTING CONSTRAINTS ON TREE BASED ALGORITHMS
+
+![image](https://user-images.githubusercontent.com/96951127/174470428-1249193f-c866-49f6-b7de-a96598594a83.png)
+
+1. Minimum samples for a node split
+
+   Higher values prevent a model from learning relations which might be highly specific to the particular sample selected for a  tree.Too high values can lead to under-fitting.
+   
+2. Minimum samples for a terminal node (leaf)
+   
+   Similar to the previous constraint, too high values can lead to underfitting.
+   
+3. Maximum depth of tree (vertical depth)
+
+4. Maximum number of terminal nodes
+
+5. Maximum features to consider for split
+
+PRUNING
+
+In Pruning we look at a few steps ahead and make a choice.
+
+We first make the decision tree to a large depth.
+
+Then we start at the bottom and start removing leaves which are giving us negative returns when compared from the top.
+
+Suppose a split is giving us a gain of say -10 (loss of 10) and then the next split on that gives us a gain of 20. 
+
+A simple decision tree will stop at step 1 but in pruning, we will see that the overall gain is +10 and keep both leaves.
+
+Hence, Pruning is a good technique.
+
+If you need to build a model which is easy to explain to people, a decision tree model will always do better than a linear model. Decision tree models are even simpler to interpret than linear regression !!
 
 
 
