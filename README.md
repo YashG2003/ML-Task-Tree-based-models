@@ -51,6 +51,12 @@ The algorithm selection is also based on type of target variables. Let’s look 
   
   ![image](https://user-images.githubusercontent.com/96951127/174466789-8ab6e71f-5537-4b1b-9086-b49a9148171e.png)
   
+  Steps to Calculate Gini for a split
+
+  Calculate Gini for sub-nodes, using formula sum of square of probability for success and failure (p^2+q^2).
+  
+  Calculate Gini for split using weighted Gini score of each node of that split.
+  
   Split on Gender:
 
   Calculate, Gini for sub-node Female = (0.2)*(0.2)+(0.8)*(0.8)=0.68
